@@ -59,21 +59,25 @@ function App() {
               </button>
             )}
           </section>
-Second
+
           <section className="section2">
-            <ul>
-              {todo.map((item, index) => (
-                <li key={index}>
-                  <p className="para">{item}</p> 
-                  <div className="btnHolder">
-                    <button onClick={() => editTodo(index)}>Edit</button>
-                    <button onClick={() => deleteTodo(index)}>
-                      Delete
-                    </button>{" "}
-                  </div>
-                </li>
-              ))}
-            </ul>
+            {todo.length === 0 ? (
+              <div>No todo found</div>
+            ) : (
+              <ul>
+                {todo.map((item, index) => (
+                  <li key={index}>
+                    <p className="para">{item}</p>
+                    <div className="btnHolder">
+                      <button onClick={() => editTodo(index)}>Edit</button>
+                      <button onClick={() => deleteTodo(index)}>
+                        Delete
+                      </button>{" "}
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            )}
           </section>
         </div>
       </main>

@@ -13,7 +13,7 @@
 }
 
 .newbtn {
-  /* background-color: green; */
+   background-color: green; 
 }
 .btnHolder{
   width: 30%;
@@ -44,7 +44,6 @@
   justify-content: center;
   gap: 20px;
   border-radius: 15%;
-  background-color: red;
 }
 input {
   width: 70%;
@@ -69,20 +68,17 @@ button {
   font-size: large;
   overflow-y: auto;
   align-items: center;
-  background-color: orange;
 }
 
 ul{
   list-style: none;
   width: 100%;
-  background-color: green;
   gap: 5px;
 }
 
 li{
   display: flex;
 
-  background-color: purple;
   gap: 10px;
   width: 100%;
   justify-content: space-between;
